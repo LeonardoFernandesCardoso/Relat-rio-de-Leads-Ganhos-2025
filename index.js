@@ -1,10 +1,10 @@
 
-// Configurações de Cores
+// Configurações de Cores (Paleta de Azuis Executivos)
 const STATUS_COLORS = {
-  Base: '#003049',
-  Onboarding: '#0077b6',
-  Cancelado: '#d62828',
-  Others: '#94a3b8'
+  Base: '#002855',      // Azul Marinho Profundo
+  Onboarding: '#00509d', // Azul Oceano
+  Cancelado: '#778da9',  // Azul Acinzentado (Muted)
+  Others: '#1b263b'      // Azul Escuro
 };
 
 const RAW_CSV = `"Negócio - Título","Negócio - Etapa","Negócio - ⭐ Quantidade de Licenças / Veículos contratados","Negócio - Status","Negócio - Ganho em","Negócio - ⭐🔵 Tipo de Equipe (Teams)","Negócio - ⭐ Segmento do Cliente","Negócio - ⚠️ Justificativa Onboarding","Negócio - Motivo do Cancelamento","Negócio - Negócio criado em"
@@ -482,7 +482,7 @@ function initDashboard() {
                                     <th class="px-6 py-10 text-[11px] font-black text-blue-950 uppercase text-center">Total</th>
                                     <th class="px-6 py-10 text-[11px] font-black text-blue-800 uppercase text-center">Base</th>
                                     <th class="px-6 py-10 text-[11px] font-black text-blue-400 uppercase text-center">Onb.</th>
-                                    <th class="px-6 py-10 text-[11px] font-black text-red-500 uppercase text-center">Canc.</th>
+                                    <th class="px-6 py-10 text-[11px] font-black text-blue-300 uppercase text-center">Canc.</th>
                                     <th class="px-6 py-10 text-[11px] font-black text-slate-500 uppercase">Conversão Base</th>
                                     <th class="px-6 py-10 text-[11px] font-black text-slate-500 uppercase">Cancelamento (%)</th>
                                     <th class="px-12 py-10 text-[11px] font-black text-slate-500 uppercase">Tempo Médio</th>
@@ -500,7 +500,7 @@ function initDashboard() {
                                         <td class="px-6 py-10 text-center font-bold text-slate-400">${t.total}</td>
                                         <td class="px-6 py-10 text-center font-black text-blue-950 text-base">${t.base}</td>
                                         <td class="px-6 py-10 text-center font-black text-blue-500 text-base">${t.onboarding}</td>
-                                        <td class="px-6 py-10 text-center font-black text-red-400 text-base">${t.cancelado}</td>
+                                        <td class="px-6 py-10 text-center font-black text-blue-300 text-base">${t.cancelado}</td>
                                         <td class="px-6 py-10 min-w-[180px]">
                                             <div class="flex items-center gap-4">
                                                 <div class="flex-1 h-3 bg-slate-100 rounded-full overflow-hidden border border-slate-200">
@@ -512,9 +512,9 @@ function initDashboard() {
                                         <td class="px-6 py-10 min-w-[180px]">
                                             <div class="flex items-center gap-4">
                                                 <div class="flex-1 h-3 bg-slate-100 rounded-full overflow-hidden border border-slate-200">
-                                                    <div class="h-full bg-red-500 shadow-md transition-all duration-1000" style="width: ${t.churn}%"></div>
+                                                    <div class="h-full bg-blue-400 shadow-md transition-all duration-1000" style="width: ${t.churn}%"></div>
                                                 </div>
-                                                <span class="text-[11px] font-black text-red-500 w-12">${t.churn.toFixed(1)}%</span>
+                                                <span class="text-[11px] font-black text-blue-400 w-12">${t.churn.toFixed(1)}%</span>
                                             </div>
                                         </td>
                                         <td class="px-12 py-10">
@@ -533,7 +533,6 @@ function initDashboard() {
 
             <footer class="max-w-7xl mx-auto text-center py-24 border-t-2 border-slate-200">
                 <div class="w-48 h-2 bg-blue-950 mx-auto mb-10 rounded-full opacity-5"></div>
-                <p class="text-slate-300 text-[11px] font-black uppercase tracking-[0.8em]">Analytics 2025 | Relatório Gerencial Consolidado | v7.5</p>
             </footer>
         </div>
     `;
@@ -551,7 +550,7 @@ function renderChart(kpis) {
             labels: ['Total Leads', 'Em Onboarding', 'Base GE (Sucesso)', 'Cancelados'],
             datasets: [{
                 data: [kpis.total, kpis.onboarding, kpis.base, kpis.cancelled],
-                backgroundColor: ['#1e293b', '#3b82f6', '#1e3a8a', '#ef4444'],
+                backgroundColor: ['#1e293b', '#3b82f6', '#1e3a8a', '#94a3b8'],
                 borderRadius: 25,
                 barThickness: 55
             }]
