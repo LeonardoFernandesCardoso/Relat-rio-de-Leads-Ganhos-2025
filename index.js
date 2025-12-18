@@ -1,10 +1,10 @@
 
-// Configurações de Cores (Paleta de Azuis Executivos)
+// Configurações de Cores
 const STATUS_COLORS = {
   Base: '#002855',      // Azul Marinho Profundo
-  Onboarding: '#00509d', // Azul Oceano
-  Cancelado: '#778da9',  // Azul Acinzentado (Muted)
-  Others: '#1b263b'      // Azul Escuro
+  Onboarding: '#3b82f6', // Azul Oceano
+  Cancelado: '#d62828',  // Alerta Vermelho (Restore)
+  Others: '#1e293b'      // Azul Escuro / Slate
 };
 
 const RAW_CSV = `"Negócio - Título","Negócio - Etapa","Negócio - ⭐ Quantidade de Licenças / Veículos contratados","Negócio - Status","Negócio - Ganho em","Negócio - ⭐🔵 Tipo de Equipe (Teams)","Negócio - ⭐ Segmento do Cliente","Negócio - ⚠️ Justificativa Onboarding","Negócio - Motivo do Cancelamento","Negócio - Negócio criado em"
@@ -392,7 +392,6 @@ function initDashboard() {
                             <span class="w-3 h-10 bg-blue-600 rounded-full shadow-lg shadow-blue-200"></span> Diagnóstico Gerencial
                         </h2>
                         
-                        <!-- Insight 1: Eficiência de Conversão -->
                         <div class="bg-white p-10 rounded-[3rem] shadow-sm border border-slate-100 group hover:border-blue-400 transition-all duration-500">
                             <div class="flex gap-8">
                                 <div class="bg-blue-50 p-5 rounded-2xl h-fit group-hover:bg-blue-100 transition-colors">
@@ -410,7 +409,6 @@ function initDashboard() {
                             </div>
                         </div>
 
-                        <!-- Insight 2: Campeão de Conversão -->
                         <div class="bg-white p-10 rounded-[3rem] shadow-sm border border-slate-100 group hover:border-blue-400 transition-all duration-500">
                             <div class="flex gap-8">
                                 <div class="bg-blue-50 p-5 rounded-2xl h-fit group-hover:bg-blue-100 transition-colors">
@@ -428,7 +426,6 @@ function initDashboard() {
                             </div>
                         </div>
 
-                        <!-- Insight 3: Perda Financeira -->
                         <div class="bg-white p-10 rounded-[3rem] shadow-sm border border-slate-100 group hover:border-blue-400 transition-all duration-500">
                             <div class="flex gap-8">
                                 <div class="bg-blue-50 p-5 rounded-2xl h-fit group-hover:bg-blue-100 transition-colors">
@@ -450,18 +447,18 @@ function initDashboard() {
 
                 <!-- Churn Reasons Section -->
                 <div class="bg-white p-10 rounded-[3.5rem] shadow-sm border border-slate-200/50">
-                    <h2 class="text-2xl font-black text-blue-900 mb-10 flex items-center gap-4 uppercase tracking-tighter italic">
-                        <span class="w-3 h-10 bg-blue-900 rounded-full"></span> Análise Crítica de Churn
+                    <h2 class="text-2xl font-black text-red-800 mb-10 flex items-center gap-4 uppercase tracking-tighter italic">
+                        <span class="w-3 h-10 bg-red-600 rounded-full"></span> Análise Crítica de Churn
                     </h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         ${cancelReasons.map(c => `
-                            <div class="flex items-center justify-between p-6 bg-slate-50 rounded-[2rem] border border-slate-100 group hover:border-blue-200 transition-all">
-                                <span class="text-[11px] font-black text-blue-950 uppercase truncate pr-4">${c[0]}</span>
+                            <div class="flex items-center justify-between p-6 bg-slate-50 rounded-[2rem] border border-slate-100 group hover:border-red-200 transition-all">
+                                <span class="text-[11px] font-black text-slate-800 uppercase truncate pr-4">${c[0]}</span>
                                 <div class="flex items-center gap-3">
-                                    <div class="h-2 w-16 bg-blue-100 rounded-full overflow-hidden">
-                                        <div class="h-full bg-blue-800" style="width: ${(c[1]/kpis.cancelled)*100}%"></div>
+                                    <div class="h-2 w-16 bg-red-100 rounded-full overflow-hidden">
+                                        <div class="h-full bg-red-600" style="width: ${(c[1]/kpis.cancelled)*100}%"></div>
                                     </div>
-                                    <span class="text-xs font-black text-blue-800">${c[1]}</span>
+                                    <span class="text-xs font-black text-red-600">${c[1]}</span>
                                 </div>
                             </div>
                         `).join('')}
@@ -482,7 +479,7 @@ function initDashboard() {
                                     <th class="px-6 py-10 text-[11px] font-black text-blue-950 uppercase text-center">Total</th>
                                     <th class="px-6 py-10 text-[11px] font-black text-blue-800 uppercase text-center">Base</th>
                                     <th class="px-6 py-10 text-[11px] font-black text-blue-400 uppercase text-center">Onb.</th>
-                                    <th class="px-6 py-10 text-[11px] font-black text-blue-300 uppercase text-center">Canc.</th>
+                                    <th class="px-6 py-10 text-[11px] font-black text-red-600 uppercase text-center">Canc.</th>
                                     <th class="px-6 py-10 text-[11px] font-black text-slate-500 uppercase">Conversão Base</th>
                                     <th class="px-6 py-10 text-[11px] font-black text-slate-500 uppercase">Cancelamento (%)</th>
                                     <th class="px-12 py-10 text-[11px] font-black text-slate-500 uppercase">Tempo Médio</th>
@@ -500,7 +497,7 @@ function initDashboard() {
                                         <td class="px-6 py-10 text-center font-bold text-slate-400">${t.total}</td>
                                         <td class="px-6 py-10 text-center font-black text-blue-950 text-base">${t.base}</td>
                                         <td class="px-6 py-10 text-center font-black text-blue-500 text-base">${t.onboarding}</td>
-                                        <td class="px-6 py-10 text-center font-black text-blue-300 text-base">${t.cancelado}</td>
+                                        <td class="px-6 py-10 text-center font-black text-red-500 text-base">${t.cancelado}</td>
                                         <td class="px-6 py-10 min-w-[180px]">
                                             <div class="flex items-center gap-4">
                                                 <div class="flex-1 h-3 bg-slate-100 rounded-full overflow-hidden border border-slate-200">
@@ -512,9 +509,9 @@ function initDashboard() {
                                         <td class="px-6 py-10 min-w-[180px]">
                                             <div class="flex items-center gap-4">
                                                 <div class="flex-1 h-3 bg-slate-100 rounded-full overflow-hidden border border-slate-200">
-                                                    <div class="h-full bg-blue-400 shadow-md transition-all duration-1000" style="width: ${t.churn}%"></div>
+                                                    <div class="h-full bg-red-600 shadow-md transition-all duration-1000" style="width: ${t.churn}%"></div>
                                                 </div>
-                                                <span class="text-[11px] font-black text-blue-400 w-12">${t.churn.toFixed(1)}%</span>
+                                                <span class="text-[11px] font-black text-red-600 w-12">${t.churn.toFixed(1)}%</span>
                                             </div>
                                         </td>
                                         <td class="px-12 py-10">
@@ -550,7 +547,7 @@ function renderChart(kpis) {
             labels: ['Total Leads', 'Em Onboarding', 'Base GE (Sucesso)', 'Cancelados'],
             datasets: [{
                 data: [kpis.total, kpis.onboarding, kpis.base, kpis.cancelled],
-                backgroundColor: ['#1e293b', '#3b82f6', '#1e3a8a', '#94a3b8'],
+                backgroundColor: ['#1e293b', '#3b82f6', '#1e3a8a', '#d62828'], // Cancelado is Red here
                 borderRadius: 25,
                 barThickness: 55
             }]
