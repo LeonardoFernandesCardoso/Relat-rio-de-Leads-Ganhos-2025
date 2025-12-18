@@ -44,7 +44,7 @@ const RAW_CSV = `"Negócio - Título","Negócio - Etapa","Negócio - ⭐ Quantid
 "Fsa Service manutenção Condomnial","BASE GE","3","Ganho","2025-01-07 14:31:30","Técnicos","Serviços, Segurança Eletrônica","","","2025-01-02 18:45:02"
 "Sae Importacao Exportacao Dolly Refrigerantes","BASE GE","20","Ganho","2025-04-29 17:00:38","Vendedores","Alimentos, Distribuidora","Insatisfação com a API e impossibilidade de gerir as rotas conforme a necessidade do projeto.","","2025-01-02 19:52:33"
 "LEVEN - Felix & Ribeiro","BASE GE","4","Ganho","2025-03-19 00:00:00","Representantes","Farmacêutico","","","2025-01-03 16:09:33"
-"Suprinet Telecom (Cancelado) (Cancelado)","CANCELADO GE","4","Ganho","2025-02-04 10:12:59","Vendedores","Telecomunicações","","Fiquei sem equipe (GE)","2025-01-06 11:05:42"
+"Suprinet Telecom (Cancelado) (Cancelado)","CANCELADO GE","4","Ganho","2025-01-06 11:05:42"
 "APCP PARTICIPACOES SOCIETARIAS LTDA (Baterlife)","BASE GE","41","Ganho","2025-02-07 15:05:10","Vendedores","Distribuidora, Automotivo","","","2025-01-06 16:48:42"
 "Be Automação","ETAPA 5: > 60 DIAS","6","Ganho","2025-02-19 18:01:18","Técnicos","Piscinas","Pretendem começar o uso somente em janeiro devido recesso.","","2025-01-08 11:52:46"
 "Odontoart Planos Odontológicos Ltda","BASE GE","18","Ganho","2025-04-01 11:42:07","Vendedores","Saúde","Empresa com problemas internos e trocas de gestão.","","2025-01-08 14:46:35"
@@ -85,70 +85,70 @@ const RAW_CSV = `"Negócio - Título","Negócio - Etapa","Negócio - ⭐ Quantid
 "P1LED COMERCIO E IMPORTACAO DE PRODUTOS ELETRICOS E SERVICOS LTDA","BASE GE","4","Ganho","2025-02-27 16:06:44","Técnicos","Serviços","","","2025-02-20 17:29:30"
 "Coopema (Cancelado)","CANCELADO GE","5","Ganho","2025-03-17 11:22:20","Entregadores","Distribuidora","Sem uso do sistema, contato difícil.","","2025-02-20 18:34:17"
 "Select Elevadores (Cancelado)","CANCELADO GE","4","Ganho","2025-02-25 11:45:28","Técnicos","","","Contratei outro sistema","2025-02-25 11:45:10"
-"Servopa Administradora de Consórcio","BASE GE","45","Ganho","2025-06-27 10:06:49","Vendedores","Bancário","Pendências of automação and treinamento with the equipe.","","2025-02-25 12:13:46"
+"Servopa Administradora de Consórcio","BASE GE","45","Ganho","2025-06-27 10:06:49","Vendedores","Bancário","Pendências de automação e treinamento com a equipe.","","2025-02-25 12:13:46"
 "Biomed Farma","BASE GE","4","Ganho","2025-03-19 17:23:36","Vendedores, Representantes","Saúde","","","2025-02-25 17:19:21"
 "Clean Water Dedetizadora (Cancelado)","CANCELADO GE","4","Ganho","2025-02-27 16:27:43","Técnicos","","","Problemas Técnicos Recorrentes","2025-02-27 16:27:12"
 "SALUBI LATICINIOS INDUSTRIA E COMERCIO LTDA","BASE GE","10","Ganho","2025-03-24 15:53:35","Promotores","Alimentos, Distribuidora","","","2025-02-28 12:17:40"
 "LOGPISO COMERCIO LTDA","BASE GE","5","Ganho","2025-04-03 16:34:08","Vendedores","Distribuidora","","","2025-02-28 15:15:17"
 "Canal service","BASE GE","4","Ganho","2025-05-06 08:47:17","Técnicos","Serviços, Facilities","","","2025-03-04 15:29:39"
 "Canada Veículos - CANADÁ VEÍCULOS LTDA","BASE GE","4","Ganho","2025-05-26 17:19:59","Representantes","Automotivo","","","2025-03-07 09:01:15"
-"ACM Santos","BASE GE","6","Ganho","2025-04-07 10:30:31","Entregadores","Distribuidora, Cosméticos","Aguardando retorno sobre o uso of reembolso.","","2025-03-13 09:33:36"
+"ACM Santos","BASE GE","6","Ganho","2025-04-07 10:30:31","Entregadores","Distribuidora, Cosméticos","Aguardando retorno sobre o uso de reembolso.","","2025-03-13 09:33:36"
 "Pro Solo (Cancelado) (Cancelado)","CANCELADO GE","4","Ganho","2025-04-03 10:52:18","Representantes","Agronegócio","","Inadimplência (Jurídico)","2025-03-14 08:08:24"
 "PADRAO SEGURANCA E VIGILANCIA LTDA","BASE GE","41","Ganho","2025-04-11 16:34:46","Técnicos","Segurança Eletrônica","","","2025-03-17 11:16:18"
 "NASA SECURITIZADORA S.A. (Cancelado) (Cancelado)","CANCELADO GE","4","Ganho","2025-04-24 18:02:30","Vendedores","Bancário","","Inadimplência (Jurídico)","2025-03-19 12:18:49"
 "Orgânica Piscinas LTDA","BASE GE","12","Ganho","2025-04-30 13:24:24","Técnicos","Piscinas, Limpeza","Funcionários não estão aderindo a rotina.","","2025-03-21 09:26:28"
-"MDSolar (Cancelado)","CANCELADO GE","6","Ganho","2025-04-01 18:03:11","Técnicos","Energia, Piscinas","","Mudança of Estratégia da Empresa","2025-03-21 17:09:15"
+"MDSolar (Cancelado)","CANCELADO GE","6","Ganho","2025-04-01 18:03:11","Técnicos","Energia, Piscinas","","Mudança de Estratégia da Empresa","2025-03-21 17:09:15"
 "Lizemed","BASE GE","6","Ganho","2025-05-14 17:06:55","Representantes","Saúde, Nutrição","","","2025-03-21 19:09:16"
 "PC SOLUCOES - PC SUPORTE EM AUTOMAÇÃO CONTABIL LTDA","BASE GE","4","Ganho","2025-05-05 11:23:43","Vendedores","Tecnologia","","","2025-03-24 19:22:25"
 "N P COUTO SISTEMAS E TECNOLOGIA DE INFORMATICA LTDA","BASE GE","4","Ganho","2025-05-22 10:49:51","Técnicos","Serviços, Segurança Eletrônica, Informática, Manutenção","Aguardando novos projetos para iniciar uso pleno.","","2025-03-25 09:50:15"
 "Moderna Emprego","BASE GE","6","Ganho","2025-05-15 17:31:41","Consultores","Serviços","","","2025-03-26 15:59:16"
 "LINE SERVICE TERCEIRIZACAO E SERVICOS LTDA","BASE GE","21","Ganho","2025-04-07 07:55:09","Técnicos","Serviços","","","2025-03-28 13:45:49"
-"HUBEES TECNOLOGIA S.A","BASE GE","10","Ganho","2025-06-11 08:19:23","Técnicos, Consultores","Estacionamento","Equipe of TI with dificuldades técnicas na integração.","","2025-04-02 10:40:08"
+"HUBEES TECNOLOGIA S.A","BASE GE","10","Ganho","2025-06-11 08:19:23","Técnicos, Consultores","Estacionamento","Equipe de TI com dificuldades técnicas na integração.","","2025-04-02 10:40:08"
 "Buffalo Corretora de Seguros","ETAPA 5: > 60 DIAS","5","Ganho","2025-10-07 08:22:43","Vendedores","Serviços","","","2025-04-02 14:43:46"
 "Fematic","BASE GE","4","Ganho","2025-04-14 08:17:44","Técnicos","Manutenção, Industrial, OUTROS","","","2025-04-03 11:09:46"
 "Padrão geradores (JUNIOR FERNANDO ACKER)","BASE GE","4","Ganho","2025-05-05 09:11:42","Mista (Técnicos/Vendedores)","Manutenção","","","2025-04-03 19:33:38"
 "SPINE CARE PRODUTOS MEDICOS LTDA","BASE GE","17","Ganho","2025-05-09 12:03:04","Vendedores","Distribuidora, Saúde","","","2025-04-04 10:32:49"
 "Nexis Qualificação","ETAPA 2: 16 a 30 DIAS","4","Ganho","2025-11-21 17:37:42","Técnicos","Serviços","","","2025-04-04 13:39:18"
 "BebFilter Serviço Autorizado","BASE GE","5","Ganho","2025-04-08 18:03:38","Técnicos","Manutenção","","","2025-04-07 16:49:56"
-"BOXCHARGE LTDA (Cancelado)","CANCELADO GE","8","Ganho","2025-05-07 15:09:50","Técnicos","Manutenção","Dificuldade of adesão por parte dos técnicos em obras.","Contratei outro sistema","2025-04-07 17:44:56"
+"BOXCHARGE LTDA (Cancelado)","CANCELADO GE","8","Ganho","2025-05-07 15:09:50","Técnicos","Manutenção","Dificuldade de adesão por parte dos técnicos em obras.","Contratei outro sistema","2025-04-07 17:44:56"
 "PARCO AUTOMACAO E SERVICOS LTDA (Cancelado)","CANCELADO GE","10","Ganho","2025-04-08 17:21:04","Mista (Técnicos/Vendedores)","Tecnologia, Services","","Não aceitação por parte da equipe (GE)","2025-04-08 09:10:56"
-"RiosVistorias (Cancelado) (Cancelado)","CANCELADO GE","4","Ganho","2025-05-12 10:35:23","Vendedores","Imobiliário","","Alteração do tipo of equipe (GE)","2025-04-08 14:02:15"
+"RiosVistorias (Cancelado) (Cancelado)","CANCELADO GE","4","Ganho","2025-05-12 10:35:23","Vendedores","Imobiliário","","Alteração do tipo de equipe (GE)","2025-04-08 14:02:15"
 "Tudor Campinas Baterias LTDA","BASE GE","8","Ganho","2025-04-24 12:17:36","Vendedores, Entregadores","Distribuidora, Automotivo","","","2025-04-11 10:16:00"
-"ROVITEX IND E COM DE MALHAS LTDA (Cancelado) (Cancelado)","CANCELADO GE","4","Ganho","2025-04-30 18:27:58","Vendedores, Representantes","Distribuidora, Têxtil","Pararam of usar and não atendem contatos.","","2025-04-11 10:53:41"
+"ROVITEX IND E COM DE MALHAS LTDA (Cancelado) (Cancelado)","CANCELADO GE","4","Ganho","2025-04-30 18:27:58","Vendedores, Representantes","Distribuidora, Têxtil","Pararam de usar e não atendem contatos.","","2025-04-11 10:53:41"
 "Grupo Auge Segurança - Astromix","BASE GE","6","Ganho","2025-05-19 10:18:54","Técnicos","Segurança Eletrônica","","","2025-04-14 11:02:08"
-"CTRLW SOLUTIONS (Cancelado) (Cancelado)","CANCELADO GE","4","Ganho","2025-06-23 18:40:31","Técnicos","Segurança Eletrônica","Não comparecem as reuniões of onboarding.","Contratei outro sistema","2025-04-14 12:30:08"
+"CTRLW SOLUTIONS (Cancelado) (Cancelado)","CANCELADO GE","4","Ganho","2025-06-23 18:40:31","Técnicos","Segurança Eletrônica","Não comparecem as reuniões de onboarding.","Contratei outro sistema","2025-04-14 12:30:08"
 "Guanda Baterias","BASE GE","6","Ganho","2025-05-07 15:54:26","Vendedores","Distribuidora","","","2025-04-14 16:21:00"
 "Pimpão Mini Mercado","BASE GE","5","Ganho","2025-05-20 00:00:00","Técnicos","Alimentos","","","2025-04-21 18:07:58"
 "ACQUASUL POCOS ARTESIANOS","BASE GE","5","Ganho","2025-05-26 08:52:30","Vendedores","Serviços","","","2025-04-22 11:59:28"
-"CleanRio Higienização (Cancelado) (Cancelado)","CANCELADO GE","4","Ganho","2025-05-06 16:50:40","Técnicos","Limpeza","","Falta of Função","2025-04-23 16:40:51"
-"IMPERIAL COMERCIO E MANUTENÇAO","BASE GE","6","Ganho","2025-05-06 17:05:57","Técnicos","Inst. Manutenção Elétrica, Manutenção","Aguardando retorno sobre um projeto of engenharia.","","2025-04-25 11:16:19"
+"CleanRio Higienização (Cancelado) (Cancelado)","CANCELADO GE","4","Ganho","2025-05-06 16:50:40","Técnicos","Limpeza","","Falta de Função","2025-04-23 16:40:51"
+"IMPERIAL COMERCIO E MANUTENÇAO","BASE GE","6","Ganho","2025-05-06 17:05:57","Técnicos","Inst. Manutenção Elétrica, Manutenção","Aguardando retorno sobre um projeto de engenharia.","","2025-04-25 11:16:19"
 "HidroSoluções (Cancelado)","CANCELADO GE","4","Ganho","2025-05-21 15:17:01","Técnicos","Manutenção","","","2025-04-29 08:25:09"
 "Amazon Cleaner","BASE GE","6","Ganho","2025-05-14 16:47:08","Mista (Técnicos/Vendedores)","Limpeza","","","2025-04-30 11:10:48"
 "LOJAO DOS TRATORES (Cancelado)","CANCELADO GE","4","Ganho","2025-05-30 16:55:15","Vendedores","Agronegócio","","Fiquei sem equipe (GE)","2025-04-30 14:30:55"
-"Wellvet Solucoes em Saude e Bem Estar Animal LTDA","BASE GE","14","Ganho","2025-05-21 12:01:33","Vendedores","Distribuidora, Animal/Veterinária","Mudança frequente of gestores atrasou o projeto.","","2025-05-03 10:31:10"
-"Cartao BD Saude + LTDA (Cancelado) (Cancelado)","CANCELADO GE","4","Ganho","2025-06-12 18:28:36","Vendedores, Representantes","Saúde","Gestor with dificuldade of inserir rotina na equipe nova.","Inadimplência (Jurídico)","2025-05-04 08:21:44"
+"Wellvet Solucoes em Saude e Bem Estar Animal LTDA","BASE GE","14","Ganho","2025-05-21 12:01:33","Vendedores","Distribuidora, Animal/Veterinária","Mudança frequente de gestores atrasou o projeto.","","2025-05-03 10:31:10"
+"Cartao BD Saude + LTDA (Cancelado) (Cancelado)","CANCELADO GE","4","Ganho","2025-06-12 18:28:36","Vendedores, Representantes","Saúde","Gestor com dificuldade de inserir rotina na equipe nova.","Inadimplência (Jurídico)","2025-05-04 08:21:44"
 "Atacadão pai e filho","ETAPA 2: 16 a 30 DIAS","4","Ganho","2025-11-28 17:44:03","Vendedores","Alimentos","","","2025-05-05 09:17:19"
-"Barrapower Distribuidora","ETAPA 5: > 60 DIAS","4","Ganho","2025-05-22 11:55:55","Vendedores","OUTROS","Gestor and supervisores sem disponibilidade por alta demanda.","","2025-05-06 10:08:09"
+"Barrapower Distribuidora","ETAPA 5: > 60 DIAS","4","Ganho","2025-05-22 11:55:55","Vendedores","OUTROS","Gestor e supervisores sem disponibilidade por alta demanda.","","2025-05-06 10:08:09"
 "Facile Alimentos","BASE GE","4","Ganho","2025-04-24 00:00:00","Promotores","Alimentos","","","2025-05-06 13:02:44"
-"VNZ CORRETORA DE SEGUROS LTDA","ETAPA 5: > 60 DIAS","7","Ganho","2025-06-18 16:52:44","Vendedores","Bancário","Equipe realizando atividades internas and sem previsão of rotas externas.","","2025-05-07 17:10:36"
-"Farmácia Definitiva (Cancelado)","CANCELADO GE","4","Ganho","2025-06-06 17:47:15","Representantes","Cosméticos","","Inadimplência (Juriddico)","2025-05-12 10:32:33"
-"Solargrid Gestao de Energia","BASE GE","35","Ganho","2025-05-23 14:58:35","Vendedores","Energia","Gestor solicitou implantação em etapas and realiza muitas viagens.","","2025-05-12 11:29:39"
+"VNZ CORRETORA DE SEGUROS LTDA","ETAPA 5: > 60 DIAS","7","Ganho","2025-06-18 16:52:44","Vendedores","Bancário","Equipe realizando atividades internas e sem previsão de rotas externas.","","2025-05-07 17:10:36"
+"Farmácia Definitiva (Cancelado)","CANCELADO GE","4","Ganho","2025-06-06 17:47:15","Representantes","Cosméticos","","Inadimplência (Jurídico)","2025-05-12 10:32:33"
+"Solargrid Gestao de Energia","BASE GE","35","Ganho","2025-05-23 14:58:35","Vendedores","Energia","Gestor solicitou implantação em etapas e realiza muitas viagens.","","2025-05-12 11:29:39"
 "Dcro Negocios Imobiliarios","BASE GE","3","Ganho","2025-06-16 10:26:49","Técnicos","Serviços","Validado rapidamente pois já conheciam o sistema.","","2025-05-12 15:57:26"
 "Refrigeração Mendes","BASE GE","4","Ganho","2025-05-26 17:54:28","Técnicos","Refrigeração","","","2025-05-13 10:42:17"
-"Prolink Network","ETAPA 5: > 60 DIAS","5","Ganho","2025-09-22 08:34:46","Técnicos","Segurança","Gestor em obra of larga escala, reagendando reunião.","","2025-05-15 09:43:03"
-"Monza Travel Agencia de Viagens","BASE GE","20","Ganho","2025-08-01 11:22:09","Vendedores, Consultores","Turismo","Problemas técnicos pontuais with integração of terceiros.","","2025-05-15 12:33:50"
+"Prolink Network","ETAPA 5: > 60 DIAS","5","Ganho","2025-09-22 08:34:46","Técnicos","Segurança","Gestor em obra de larga escala, reagendando reunião.","","2025-05-15 09:43:03"
+"Monza Travel Agencia de Viagens","BASE GE","20","Ganho","2025-08-01 11:22:09","Vendedores, Consultores","Turismo","Problemas técnicos pontuais com integração de terceiros.","","2025-05-15 12:33:50"
 "Omini Representações","BASE GE","4","Ganho","2025-06-13 17:21:42","Representantes","Tecnologia","","","2025-05-15 14:26:16"
 "Metro Imob","BASE GE","4","Ganho","2025-05-26 18:11:02","Representantes","Imobiliário","","","2025-05-15 15:25:25"
 "Armazem Ribeira","BASE GE","3","Ganho","2025-05-27 17:27:36","Representantes, Entregadores","Distribuidora","","","2025-05-17 10:24:25"
 "Azoia Comercio","BASE GE","7","Ganho","2025-05-29 00:00:00","Vendedores, Entregadores","Distribuidora","Cliente recusou reunião alegando já conhecer o sistema.","","2025-05-20 10:23:40"
-"Raros Sorvetes","BASE GE","4","Ganho","2025-07-15 17:34:46","Vendedores","Alimentos","Acompanhando adesão of formulários pela equipe of campo.","","2025-05-20 11:08:08"
-"Ultra vision","FECHAMENTO SEMANA","4","Ganho","2025-12-04 11:21:31","Técnicos","Segurança","Ajustes finais of hierarquia of usuários.","","2025-05-21 11:37:29"
-"IRHPAG (Cancelado)","CANCELADO GE","4","Ganho","2025-05-29 14:58:38","Promotores","Tecnologia","Sem equipe of promotores no momento.","Fiquei sem equipe (GE)","2025-05-22 11:00:16"
+"Raros Sorvetes","BASE GE","4","Ganho","2025-07-15 17:34:46","Vendedores","Alimentos","Acompanhando adesão de formulários pela equipe de campo.","","2025-05-20 11:08:08"
+"Ultra vision","FECHAMENTO SEMANA","4","Ganho","2025-12-04 11:21:31","Técnicos","Segurança","Ajustes finais de hierarquia de usuários.","","2025-05-21 11:37:29"
+"IRHPAG (Cancelado)","CANCELADO GE","4","Ganho","2025-05-29 14:58:38","Promotores","Tecnologia","Sem equipe de promotores no momento.","Fiquei sem equipe (GE)","2025-05-22 11:00:16"
 "Grannero Presunto Cru","BASE GE","6","Ganho","2025-08-20 08:50:21","Vendedores, Representantes","Alimentos, Distribuidora","","","2025-05-22 11:30:51"
 "ORIENTE POLPA DE FRUTAS","BASE GE","4","Ganho","2025-06-18 15:57:34","Vendedores","Alimentos, Distribuidora","","","2025-05-23 20:09:18"
 "Rede Superlar Supermercados","BASE GE","4","Ganho","2025-06-26 18:22:09","Técnicos","Alimentos, Manutenção","","","2025-05-26 20:30:09"
 "FNX Soluções em Segurança Ltda","BASE GE","11","Ganho","2025-06-16 11:14:57","Técnicos","Serviços, Segurança Eletrônica","","","2025-05-29 07:18:43"
-"BCF Administradora de Bens LTDA","BASE GE","10","Ganho","2025-07-23 17:49:41","Motoristas","Serviços, Bancário","Reestruturação interna and troca of planilhas of agendamento.","","2025-05-30 14:02:15"
+"BCF Administradora de Bens LTDA","BASE GE","10","Ganho","2025-07-23 17:49:41","Motoristas","Serviços, Bancário","Reestruturação interna e troca de planilhas de agendamento.","","2025-05-30 14:02:15"
 "ALFLEX EMBALAGENS LTDA - Alplastic","BASE GE","4","Ganho","2025-06-23 18:15:39","Vendedores","Distribuidora","","","2025-06-02 08:52:08"
 "TAO Kombucha","BASE GE","4","Ganho","2025-06-17 11:58:47","Promotores","Alimentos, Distribuidora, Industrial","Gestora ausente para reuniões agendadas.","","2025-06-03 08:12:03"
 "Portaz","BASE GE","4","Ganho","2025-07-23 10:45:58","Mista (Técnicos/Vendedores)","Manutenção","","","2025-06-03 12:33:14"
@@ -157,14 +157,14 @@ const RAW_CSV = `"Negócio - Título","Negócio - Etapa","Negócio - ⭐ Quantid
 "Br pesca","BASE GE","4","Ganho","2025-07-14 13:56:33","Vendedores, Representantes","Esportivo/Pesca","","","2025-06-06 15:59:09"
 "Cimento Melo","BASE GE","5","Ganho","2025-06-10 16:04:49","Representantes","Distribuidora, Construção Civil","","","2025-06-10 09:24:31"
 "Buy Food Service","BASE GE","7","Ganho","2025-07-16 11:31:19","Vendedores","Alimentos, Distribuidora","","","2025-06-10 16:04:51"
-"BETPR CONCESSIONARIA","BASE GE","21","Ganho","2025-06-30 14:51:47","Vendedores","Bancário, OUTROS","Gestor não respondia and solicitou cancelamento do Fleet revertido.","","2025-06-12 12:17:22"
+"BETPR CONCESSIONARIA","BASE GE","21","Ganho","2025-06-30 14:51:47","Vendedores","Bancário, OUTROS","Gestor não respondia e solicitou cancelamento do Fleet revertido.","","2025-06-12 12:17:22"
 "Fibra Locações e Serviços","BASE GE","10","Ganho","2025-06-17 13:47:07","Motoristas","Serviços, Manutenção","","","2025-06-17 07:21:13"
-"BRASIL TELECOM (TAHTO GETNET)","BASE GE","41","Ganho","2025-07-21 14:42:00","Vendedores","Bancário","Projeto complexo with múltiplos stakeholders and transição of gestores.","","2025-06-18 17:49:39"
+"BRASIL TELECOM (TAHTO GETNET)","BASE GE","41","Ganho","2025-07-21 14:42:00","Vendedores","Bancário","Projeto complexo com múltiplos stakeholders e transição de gestores.","","2025-06-18 17:49:39"
 "Carlito Autopeças","BASE GE","4","Ganho","2025-07-11 10:29:44","Promotores","Automotivo","Gestor resistente a colocar obrigatoriedade em formulários.","","2025-06-24 13:43:14"
-"Don Luiz (Cancelado)","CANCELADO GE","4","Ganho","2025-07-30 18:21:27","Executivos","Bebidas","Dificuldade of contato with the directoria por gestão interna.","Inadimplência (Jurídico)","2025-06-25 14:30:27"
+"Don Luiz (Cancelado)","CANCELADO GE","4","Ganho","2025-07-30 18:21:27","Executivos","Bebidas","Dificuldade de contato with the directoria por gestão interna.","Inadimplência (Jurídico)","2025-06-25 14:30:27"
 "REBELLO SF","BASE GE","5","Ganho","2025-08-01 17:38:06","Vendedores","Automotivo","","","2025-06-26 13:37:14"
 "OK PROMOTORA","BASE GE","4","Ganho","2025-07-04 16:43:29","Promotores","Promotoria","","","2025-06-26 18:22:13"
-"AXS Energia S/A","BASE GE","50","Ganho","2025-08-22 13:41:40","Vendedores","Energia","Validando solicitações finais da equipe of BI.","","2025-06-27 10:11:15"
+"AXS Energia S/A","BASE GE","50","Ganho","2025-08-22 13:41:40","Vendedores","Energia","Validando solicitações finais da equipe de BI.","","2025-06-27 10:11:15"
 "Midia1","BASE GE","4","Ganho","2025-07-01 13:53:10","Técnicos","Marketing","","","2025-06-30 09:50:15"
 "ALFAMA","BASE GE","5","Ganho","2025-07-22 14:15:50","Entregadores","Distribuidora","","","2025-06-30 11:59:12"
 "DADIVACRED","BASE GE","4","Ganho","2025-07-07 08:43:41","Vendedores","Bancário","","","2025-07-02 15:26:28"
@@ -178,14 +178,14 @@ const RAW_CSV = `"Negócio - Título","Negócio - Etapa","Negócio - ⭐ Quantid
 "Central do Implante","BASE GE","4","Ganho","2025-07-22 20:12:50","Vendedores","Saúde","","","2025-07-08 14:46:54"
 "QUALITRON","BASE GE","4","Ganho","2025-07-21 08:41:53","Técnicos","Manutenção","","","2025-07-08 15:42:53"
 "VaiVem","BASE GE","5","Ganho","2025-07-24 11:49:12","Vendedores","Facilities","","","2025-07-09 17:07:53"
-"Teletaxi Recife","ETAPA 5: > 60 DIAS","5","Ganho","2025-07-24 16:53:50","Entregadores","Transportes","Transição of sistemas gerenciais atrasando adesão do contele.","","2025-07-11 12:08:39"
+"Teletaxi Recife","ETAPA 5: > 60 DIAS","5","Ganho","2025-07-24 16:53:50","Entregadores","Transportes","Transição de sistemas gerenciais atrasando adesão do contele.","","2025-07-11 12:08:39"
 "Masterop","BASE GE","10","Ganho","2025-07-30 16:43:56","Executivos","Turismo","","","2025-07-15 16:40:32"
 "Vidromar","BASE GE","5","Ganho","2025-07-31 18:19:40","Técnicos","Construção Civil","","","2025-07-15 20:34:01"
-"Conceito Adm","ETAPA 5: > 60 DIAS","4","Ganho","2025-08-01 17:54:40","Técnicos","","Gestor só inicia uso pleno a partir of setembro.","","2025-07-16 06:56:47"
+"Conceito Adm","ETAPA 5: > 60 DIAS","4","Ganho","2025-08-01 17:54:40","Técnicos","","Gestor só inicia uso pleno a partir de setembro.","","2025-07-16 06:56:47"
 "Global - TS","BASE GE","5","Ganho","2025-07-29 17:59:36","Técnicos","Segurança","","","2025-07-18 09:51:07"
-"Urban Connect (Cancelado)","CANCELADO GE","4","Ganho","2025-07-30 11:26:05","Técnicos","Tecnologia","","Mudança of Estratégia da Empresa","2025-07-21 14:34:15"
+"Urban Connect (Cancelado)","CANCELADO GE","4","Ganho","2025-07-30 11:26:05","Técnicos","Tecnologia","","Mudança de Estratégia da Empresa","2025-07-21 14:34:15"
 "Di Cheff","BASE GE","4","Ganho","2025-07-31 09:07:54","Promotores","Alimentos, Distribuidora","","","2025-07-22 14:55:56"
-"Metalmont (Cancelado) (Cancelado)","CANCELADO GE","3","Ganho","2025-08-19 17:14:50","Vendedores","Industrial","Reestruturando time comercial and encarregados.","Inadimplência (Jurídico)","2025-07-22 15:17:11"
+"Metalmont (Cancelado) (Cancelado)","CANCELADO GE","3","Ganho","2025-08-19 17:14:50","Vendedores","Industrial","Reestruturando time comercial e encarregados.","Inadimplência (Jurídico)","2025-07-22 15:17:11"
 "CuraAtiva","BASE GE","4","Ganho","2025-09-01 18:25:30","Promotores","Saúde","","","2025-07-24 14:35:49"
 "ORIGINAL DISTRIBUIDORA","BASE GE","7","Ganho","2025-08-18 15:53:51","Vendedores, Motoristas","Distribuidora, Automotivo","","","2025-07-24 17:19:59"
 "N & L INDUSTRIA (Grupo Jose Alves)","COMPRA ATÉ 90d","150","Ganho","2025-12-11 09:57:33","Vendedores, Promotores","Distribuidora, Limpeza","","","2025-07-25 12:24:31"
@@ -196,15 +196,15 @@ const RAW_CSV = `"Negócio - Título","Negócio - Etapa","Negócio - ⭐ Quantid
 "ADM Imagem e Eventos LTDA","BASE GE","11","Ganho","2025-08-13 17:21:43","Vendedores","Serviços","","","2025-07-30 09:02:10"
 "Cime Distribuidora","BASE GE","4","Ganho","2025-09-29 11:03:24","Vendedores","Distribuidora, Construction","","","2025-07-30 10:37:43"
 "Apex Tecnologia (Cancelado) (Cancelado)","CANCELADO GE","4","Ganho","2025-07-31 00:00:00","Técnicos","Informática","","Inadimplência (Jurídico)","2025-08-04 11:33:52"
-"Gestway","BASE GE","6","Ganho","2025-08-19 17:48:15","Motoristas","Construção Civil","Cliente já possui ferramenta interna of checklist.","","2025-08-05 12:41:14"
-"MB Protege","BASE GE","9","Ganho","2025-08-25 14:32:56","Vendedores","OUTROS","Gestora of férias atrasando a validação final.","","2025-08-05 21:13:59"
+"Gestway","BASE GE","6","Ganho","2025-08-19 17:48:15","Motoristas","Construção Civil","Cliente já possui ferramenta interna de checklist.","","2025-08-05 12:41:14"
+"MB Protege","BASE GE","9","Ganho","2025-08-25 14:32:56","Vendedores","OUTROS","Gestora de férias atrasando a validação final.","","2025-08-05 21:13:59"
 "Sempre limpa Piscinas","ETAPA 5: > 60 DIAS","5","Ganho","2025-10-08 10:14:18","Técnicos","Piscinas","","","2025-08-08 15:08:50"
 "Master - MASTER DISTRIBUIDORA OTICA LTDA","BASE GE","5","Ganho","2025-08-18 08:38:55","Vendedores","Saúde","","","2025-08-12 17:34:20"
 "QCP / QCP SOLUCOES LTDA","ETAPA 2: 16 a 30 DIAS","4","Ganho","2025-09-23 18:03:57","Técnicos","Energia, Manutenção, Industrial","","","2025-08-13 17:53:39"
 "Park Plus Estacionamentos","BASE GE","3","Ganho","2025-09-18 08:12:05","Representantes","Estacionamento","","","2025-08-14 08:49:12"
 "Grupo London","BASE GE","12","Ganho","2025-09-16 14:45:05","Técnicos, Representantes","Serviços","","","2025-08-15 11:34:06"
 "LATASA GARIMPEIRO URBANO","BASE GE","6","Ganho","2025-08-15 16:29:39","Motoristas","Industrial","","","2025-08-15 16:22:46"
-"MXL REPRESENTACOES (Lemax)","ETAPA 5: > 60 DIAS","7","Ganho","2025-09-16 13:52:42","Representantes","Têxtil","Aguardando início of nova coleção para usar o teams em pleno.","","2025-08-21 17:49:03"
+"MXL REPRESENTACOES (Lemax)","ETAPA 5: > 60 DIAS","7","Ganho","2025-09-16 13:52:42","Representantes","Têxtil","Aguardando início de nova coleção para usar o teams em pleno.","","2025-08-21 17:49:03"
 "Metalúrgica Riosulense","BASE GE","7","Ganho","2025-08-27 10:21:13","Promotores","Industrial","","","2025-08-27 09:43:54"
 "Quality Reformas e serviços","FECHAMENTO SEMANA","4","Ganho","2025-09-16 11:13:25","Técnicos","Imobiliário","","","2025-08-28 17:54:56"
 "TEL CENTRO (Sabesp)","ETAPA 1: 15 DIAS","80","Ganho","2025-11-14 17:44:39","Técnicos, Consultores","Serviços, Facilities","","","2025-08-29 10:15:32"
@@ -341,13 +341,18 @@ function initDashboard() {
     const data = parseCSV(RAW_CSV);
     const kpis = calculateKPIs(data);
     const teams = getTeamPerformance(data);
-    const cancelReasons = Object.entries(data.filter(l => l.categoria === 'Cancelado').reduce((acc, l) => {
-        const r = l.motivoCancelamento || 'Não Informado';
-        acc[r] = (acc[r] || 0) + 1;
+    
+    // Análise de Churn: Unificação de motivos (contando apenas o primeiro em caso de múltiplos)
+    const cancelledLeads = data.filter(l => l.categoria === 'Cancelado');
+    const rawCancelReasons = cancelledLeads.reduce((acc, l) => {
+        // Pega apenas o primeiro motivo caso existam múltiplos separados por vírgula
+        const primaryReason = (l.motivoCancelamento || 'Não Informado').split(',')[0].trim();
+        acc[primaryReason] = (acc[primaryReason] || 0) + 1;
         return acc;
-    }, {})).sort((a, b) => b[1] - a[1]);
+    }, {});
+    
+    const cancelReasons = Object.entries(rawCancelReasons).sort((a, b) => b[1] - a[1]);
 
-    // Lógica para o Campeão de Conversão considerando apenas equipes com >= 20 clientes
     const topTeam = [...teams]
         .filter(t => t.total >= 20)
         .sort((a, b) => b.conv - a.conv)[0] || teams[0];
@@ -439,7 +444,7 @@ function initDashboard() {
                                 </div>
                                 <div class="space-y-4 flex-1">
                                     <h3 class="font-black text-blue-950 text-xs uppercase tracking-[0.2em]">Perda Financeira</h3>
-                                    <p class="text-slate-500 text-[13px] leading-relaxed font-semibold">O motivo "${cancelReasons[0][0]}" é o maior driver de churn.</p>
+                                    <p class="text-slate-500 text-[13px] leading-relaxed font-semibold">O motivo "${cancelReasons[0] ? cancelReasons[0][0] : 'Inadimplência'}" é o maior driver de churn.</p>
                                     <div class="bg-blue-50/70 p-5 rounded-[1.5rem] border border-blue-100">
                                         <p class="text-blue-900 text-[10px] font-black italic uppercase tracking-tighter flex items-center gap-3">
                                             <i class="fa-solid fa-lightbulb text-blue-600"></i> AÇÃO: IMPLEMENTAR ALERTA DE INADIMPLÊNCIA PRECOCE NO 15º DIA DE CONTRATO.
@@ -451,19 +456,20 @@ function initDashboard() {
                     </div>
                 </div>
 
+                <!-- Churn Reasons Section (Tudo em Vermelho conforme pedido) -->
                 <div class="bg-white p-10 rounded-[3.5rem] shadow-sm border border-slate-200/50">
-                    <h2 class="text-2xl font-black text-red-800 mb-10 flex items-center gap-4 uppercase tracking-tighter italic">
+                    <h2 class="text-2xl font-black text-red-700 mb-10 flex items-center gap-4 uppercase tracking-tighter italic">
                         <span class="w-3 h-10 bg-red-600 rounded-full"></span> Análise Crítica de Churn
                     </h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         ${cancelReasons.map(c => `
-                            <div class="flex items-center justify-between p-6 bg-slate-50 rounded-[2rem] border border-slate-100 group hover:border-blue-200 transition-all">
-                                <span class="text-[11px] font-black text-blue-950 uppercase truncate pr-4">${c[0]}</span>
+                            <div class="flex items-center justify-between p-6 bg-red-50/30 rounded-[2rem] border border-red-100 group hover:border-red-400 transition-all">
+                                <span class="text-[11px] font-black text-red-700 uppercase truncate pr-4">${c[0]}</span>
                                 <div class="flex items-center gap-3">
-                                    <div class="h-2 w-16 bg-blue-100 rounded-full overflow-hidden">
-                                        <div class="h-full bg-blue-800" style="width: ${(c[1]/kpis.cancelled)*100}%"></div>
+                                    <div class="h-2 w-16 bg-red-200 rounded-full overflow-hidden">
+                                        <div class="h-full bg-red-600 shadow-sm" style="width: ${(c[1]/kpis.cancelled)*100}%"></div>
                                     </div>
-                                    <span class="text-xs font-black text-blue-800">${c[1]}</span>
+                                    <span class="text-xs font-black text-red-600">${c[1]}</span>
                                 </div>
                             </div>
                         `).join('')}
